@@ -34,5 +34,7 @@ int main(){
     cout << "Sum: " << sum << endl;
     cout << "Average: " << avg << endl;
 
+    cout << "\n\nThank you."
+
     return 0;
 }
