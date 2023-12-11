@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -17,8 +18,16 @@ int main(){
         while (n != 'y' && n != 'Y'){
             cout << "Input another grade?[Y/N] ";
             cin >> n;
+
             if (n == 'n' || n == 'N'){
                 break;
+            }
+            if (n != 'y' && n != 'Y'){
+                system("cls||clear");
+                cout << "Invalid input, please re-Enter.";
+                cin.ignore();
+                cin.get();
+                system("cls||clear");
             }
         }
         i++;
@@ -34,7 +43,7 @@ int main(){
     cout << "Sum: " << sum << endl;
     cout << "Average: " << avg << endl;
 
-    cout << "\n\nThank you."
+    cout << "\n\nThank you.";
 
     return 0;
 }
