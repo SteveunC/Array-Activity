@@ -4,18 +4,15 @@ using namespace std;
 
 int grade[100], i = 0;
 
-void gradearray(){
-    cout << "Input student grade: ";
-    cin >> grade[i];
-
-}
 int main(){
     int sum;
     double avg;
     char n;
     while (n != 'n' && n != 'N'){
         n = '0';
-        gradearray();
+
+        cout << "Input student grade: ";
+        cin >> grade[i];
 
         while (n != 'y' && n != 'Y'){
             cout << "Input another grade?[Y/N] ";
